@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.confirmar {
+    margin-top: 5rem;
+
+    .uptask {
+        @include m.uptask(v.$morado)
+    }
+
+    .acciones{
+        justify-content: center;
+        a{
+            color: v.$morado;
+            
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.barra-mobile {
+    background-color: v.$indigo;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include m.tablet {
+        display: none;
+        margin: 0;
+    }
+
+    h1 {
+        color: v.$blanco;
+    }
+
+    .menu {
+        img {
+            width: .8rem;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.barra {
+    display: none;
+
+
+    @include m.tablet {
+        background-color: v.$blanco;
+        padding: 1rem 2rem;
+        box-shadow: 1px 12px 9px -9px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1.4rem;
+
+        span {
+            font-weight: 700;
+            color: v.$indigo;
+        }
+    }
+
+    .cerrar-sesion {
+        @include m.boton(darken($color: v.$indigo, $amount: 20%), v.$blanco);
+        font-size: 1.4rem;
+        padding: 1rem;
+        border-radius: .5rem;
+    }
+
+}

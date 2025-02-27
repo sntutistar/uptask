@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+@media(prefers-color-scheme: dark){
+    $grisOscuro: #2c2c3b;
+
+    body
+    {
+        background-color: $grisOscuro;
+        
+    }
+
+    .tagline,
+    .formulario  label,
+    .olvide .acciones a,
+    .barra p,
+    .dashboard .contenido .nombre-pagina,
+    .filtros h2,
+    .filtros label,
+    .tarea p,
+    .dashboard .enlace,
+    .modal .formulario legend 
+    {
+        color: v.$blanco;
+    }
+
+    .formulario .campo input
+    
+    {
+        background-color: lighten($color: $grisOscuro, $amount: 15%);
+    }
+
+    .descripcion-pagina,
+    .formulario .campo input,
+    .barra p span
+    {
+        color: v.$grisClaro;
+    }
+    
+    .dashboard
+    {
+        background-color: $grisOscuro;
+    }
+
+    .modal .formulario input[type=text]{
+        background-color: darken($color: v.$grisClaro, $amount: 12%)
+    }
+
+    .barra
+    {
+        background-color: lighten($color: $grisOscuro, $amount: 10%);
+
+    }
+
+    .barra .cerrar-sesion,
+    .sidebar,
+    .filtros,
+    .barra-mobile
+    {
+        background-color: lighten($color: v.$indigo, $amount: 10%);
+    }
+    
+    .modal .formulario.animar{
+        background-color: $grisOscuro ;
+    }
+}
