@@ -32,7 +32,8 @@
 
     .descripcion-pagina,
     .formulario .campo input,
-    .barra p span
+    .barra p span,
+    .dashboard .formulario input:not([type=submit])
     {
         color: v.$grisClaro;
     }
@@ -62,9 +63,5 @@
     
     .modal .formulario.animar{
         background-color: $grisOscuro ;
-    }
-
-    .dashboard .formulario input:not([type=submit]){
-        color: v.$grisOscuro;
     }
 }
