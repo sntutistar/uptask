@@ -29,7 +29,7 @@ class Email
         $mail->Username = $_ENV['MAIL_USER'];
         $mail->Password = $_ENV['MAIL_PASS'];
 
-        $mail->setFrom($_ENV['MAIL_USER'], 'UpTask.com');
+        $mail->setFrom('santiagotutistar289@gmail.com', 'UpTask.com');
         $mail->addAddress($this->email);
         $mail->Subject = 'confirma tu cuenta';
 
@@ -62,7 +62,7 @@ class Email
         $mail->Username = $_ENV['MAIL_USER'];
         $mail->Password = $_ENV['MAIL_PASS'];
 
-        $mail->setFrom($_ENV['MAIL_USER'], 'UpTask.com');
+        $mail->setFrom('santiagotutistar289@gmail.com', 'UpTask.com');
         $mail->addAddress($this->email);
         $mail->Subject = 'Restablece tu contraseña';
 
