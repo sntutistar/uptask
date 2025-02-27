@@ -63,4 +63,8 @@
     .modal .formulario.animar{
         background-color: $grisOscuro ;
     }
+
+    .dashboard .formulario input:not([type=submit]){
+        color: v.$grisOscuro;
+    }
 }
