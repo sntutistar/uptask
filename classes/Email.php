@@ -27,7 +27,7 @@ class Email
         $mail->Port = $_ENV['MAIL_PORT'];
         $mail->SMTPSecure = 'tls';
         $mail->Username = $_ENV['MAIL_USER'];
-        $mail->Password = $_ENV['MAIL_PASS'];
+        $mail->Password = $_ENV['MAIL_PASSWORD'];
 
         $mail->setFrom('santiagotutistar289@gmail.com', 'UpTask.com');
         $mail->addAddress($this->email);
@@ -60,7 +60,7 @@ class Email
         $mail->Port = $_ENV['MAIL_PORT'];
         $mail->SMTPSecure = 'tls';
         $mail->Username = $_ENV['MAIL_USER'];
-        $mail->Password = $_ENV['MAIL_PASS'];
+        $mail->Password = $_ENV['MAIL_PASSWORD'];
 
         $mail->setFrom('santiagotutistar289@gmail.com', 'UpTask.com');
         $mail->addAddress($this->email);
